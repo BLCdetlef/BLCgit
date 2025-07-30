@@ -9,7 +9,7 @@ body { background: black; color: white; font-family: sans-serif; text-align: cen
 
 .footer {
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
   display: flex;
   gap: 20px;
