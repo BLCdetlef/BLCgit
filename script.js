@@ -46,6 +46,46 @@ function playIntro() {
 update();
 
 
+
+
+let infoTexts = {};
+
+function loadCSVData(url) {
+  fetch(url)
+    .then(response => response.text())
+    .then(text => {
+      const rows = text.split('\n').slice(1); // Erste Zeile = Header
+      rows.forEach(row => {
+        const [nummer, text] = row.split(',');
+        if (nummer && text) {
+          infoTexts[nummer.trim()] = text.trim();
+        }
+      });
+    });
+}
+
+// Laden der CSV-Daten (ändere den URL hier auf deine Raw-CSV-Datei)
+loadCSVData('https://raw.githubusercontent.com/deinname/deinrepository/main/infotexte.csv');
+
+// Funktion zum Abspielen einer Datei und Anzeigen des Infotextes
+function playNumber() {
+  const code = num || '000';
+  const file = `sounds/${code}.mp3`;
+
+  // Infotext setzen
+  const info = infoTexts[code] || '';
+  document.getElementById('infoText').textContent = info;
+
+  fetch(file).then(r => {
+    if (r.ok) play(file);
+    else play('sounds/999.mp3');
+  }).catch(() => play('sounds/999.mp3'));
+}
+
+
+
+
+
 function toggleInfo() {
   const popup = document.getElementById('infoPopup');
   popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
