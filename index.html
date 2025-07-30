@@ -8,6 +8,27 @@
 </head>
 <body>
   <div class="hint">Bitte Nummer eingeben und abspielen</div>
+  <button class="info-button" onclick="toggleInfo()">i</button>
+
+<div id="infoPopup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <div class="popup-header">
+      <span>Infotabelle</span>
+      <button onclick="toggleInfo()">✖</button>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Datei</th><th>Infotext</th></tr>
+      </thead>
+      <tbody id="infoTableBody">
+        <!-- JavaScript füllt die Zeilen -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+  
   <div id="display" class="display">---</div>
   <div class="pad">
     <button onclick="press('1')">1</button>
