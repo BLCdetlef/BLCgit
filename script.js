@@ -1,3 +1,22 @@
+let infoTexts = {};
+
+function loadCSVData(url) {
+  fetch(url)
+    .then(response => response.text())
+    .then(text => {
+      const rows = text.split('\n').slice(1); // erste Zeile = Header
+      rows.forEach(row => {
+        const [nummer, text] = row.split(',');
+        if (nummer && text) {
+          infoTexts[nummer.trim()] = text.trim();
+        }
+      });
+    });
+}
+
+
+
+
 let num = '';
 let audio = new Audio();  // globaler Audio-Player
 
