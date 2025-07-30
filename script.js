@@ -65,7 +65,7 @@ function loadCSVData(url) {
 }
 
 // Laden der CSV-Daten (ändere den URL hier auf deine Raw-CSV-Datei)
-loadCSVData('https://raw.githubusercontent.com/deinname/deinrepository/main/infotexte.csv');
+loadCSVData('https://raw.githubusercontent.com/BLCdetlef/BLCgit/refs/heads/main/infotexte.csv');
 
 // Funktion zum Abspielen einer Datei und Anzeigen des Infotextes
 function playNumber() {
