@@ -44,3 +44,23 @@ function playIntro() {
 }
 
 update();
+
+
+function toggleInfo() {
+  const popup = document.getElementById('infoPopup');
+  popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+}
+
+function fillInfoTable() {
+  const tbody = document.getElementById('infoTableBody');
+  for (let i = 1; i <= 999; i++) {
+    const code = i.toString().padStart(3, '0');
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${code}</td>
+      <td contenteditable="true">Infotext zu ${code}</td>
+    `;
+    tbody.appendChild(row);
+  }
+}
+fillInfoTable();
