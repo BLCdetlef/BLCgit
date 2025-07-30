@@ -1,6 +1,14 @@
 let num = '';
 let audio = new Audio();  // globaler Audio-Player
 
+function stopAndClear() {
+  audio.pause();         // Audio stoppen
+  audio.currentTime = 0; // zurückspulen
+  num = '';              // Ziffern löschen
+  update();              // Anzeige leeren
+}
+
+
 function press(d) {
   if (num.length < 3) num += d;
   update();
