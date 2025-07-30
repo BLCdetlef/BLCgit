@@ -8,7 +8,7 @@ body { background: black; color: white; font-family: sans-serif; text-align: cen
   display: flex;
   justify-content: space-between;
   padding-left: 40px;
-  padding-right: 20px; }
+  padding-right: 40px; }
 .big { font-size: 2em; }
 .small { color: yellow; font-style: italic; margin-left: 5px; }
 .intro { background: none; border: 1px solid white; color: white; padding: 5px 10px; }
