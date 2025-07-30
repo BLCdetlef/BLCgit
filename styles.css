@@ -3,14 +3,24 @@ body { background: black; color: white; font-family: sans-serif; text-align: cen
 .display { font-size: 2em; margin-bottom: 10px; }
 .pad button { width: 60px; height: 60px; margin: 5px; font-size: 1.5em; background: white; color: black; }
 .footer {
- position: fixed;
+  position: fixed;
   bottom: 10px;
-  left: 20px;
+  width: 100%;
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: flex-start;
- }
-.big { font-size: 2em; }
-.small { color: yellow; font-style: italic; margin-left: 5px; }
+  justify-content: center;
+}
+
+.big {
+  font-size: 2em;
+}
+
+.small {
+  color: yellow;
+  font-style: italic;
+  font-size: 2em;
+  margin-left: 5px;
+}
+
 .intro { background: none; border: 1px solid white; color: white; padding: 5px 10px; }
