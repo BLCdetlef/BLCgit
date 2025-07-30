@@ -7,6 +7,69 @@ body { background: black; color: white; font-family: sans-serif; text-align: cen
   padding-bottom: 0;
 }
 
+.info-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: rgba(0, 0, 0, 0.95);
+  color: white;
+  border: 2px solid white;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.popup-content {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popup table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.popup th, .popup td {
+  padding: 5px;
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+
+.popup tbody {
+  overflow-y: auto;
+  display: block;
+  height: 100%;
+}
+
+
+
 .footer {
   position: fixed;
   bottom: 0px;
