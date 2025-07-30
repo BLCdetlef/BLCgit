@@ -2,6 +2,10 @@ body { background: black; color: white; font-family: sans-serif; text-align: cen
 .hint { margin: 20px; font-size: 1.2em; }
 .display { font-size: 2em; margin-bottom: 10px; }
 .pad button { width: 60px; height: 60px; margin: 5px; font-size: 1.5em; background: white; color: black; }
+.pad {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
 .footer {
   position: fixed;
@@ -22,10 +26,6 @@ body { background: black; color: white; font-family: sans-serif; text-align: cen
   font-style: italic;
   font-size: 2em;
   margin-left: 5px;
-}
-
-.pad {
-  margin-bottom: 5px;
 }
 
 .intro { background: none; border: 1px solid white; color: white; padding: 5px 10px; }
