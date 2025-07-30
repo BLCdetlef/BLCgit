@@ -1,0 +1,10 @@
+Schritte zur Veröffentlichung auf GitHub Pages:
+
+1. Gehe zu https://github.com und erstelle ein neues Repository mit dem Namen 'BLCgit'.
+2. Lade alle Dateien aus diesem ZIP-Ordner in dein Repository hoch.
+3. Gehe in die Repository-Einstellungen zu "Pages".
+4. Wähle als Quelle den Branch "main" und den Ordner "/ (root)".
+5. Nach ein paar Sekunden ist deine Seite verfügbar unter:
+   https://<dein-benutzername>.github.io/BLCgit/
+
+Audiodateien kannst du im Ordner /sounds/ durch eigene MP3s ersetzen.
