@@ -24,4 +24,8 @@ body { background: black; color: white; font-family: sans-serif; text-align: cen
   margin-left: 5px;
 }
 
+.pad {
+  margin-bottom: 10px;
+}
+
 .intro { background: none; border: 1px solid white; color: white; padding: 5px 10px; }
