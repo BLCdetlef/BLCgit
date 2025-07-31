@@ -50,7 +50,7 @@ update();
 
 let infoTexts = {};
 
-function loadCSVData(url) {
+function loadCSVData('https://raw.githubusercontent.com/BLCdetlef/BLCgit/main/infotexte.csv') {
   fetch(url)
     .then(response => response.text())
     .then(text => {
